@@ -1,3 +1,3 @@
-console.log("module-a");
+import 'module-b';
 
-require("module-b");
+console.log('module-a');
