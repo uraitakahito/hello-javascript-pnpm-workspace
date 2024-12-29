@@ -1,5 +1,6 @@
 ```console
 % pnpm install
-% node src/module-a/index.js
+% node packages/module-a/index.js
 % pnpm -F module-a start
+% pnpm -F using-external-esmodule start
 ```
