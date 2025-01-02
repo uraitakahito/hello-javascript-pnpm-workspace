@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@uraitakahito/hello-commonjs": "^1.0.8"
+  }
 }

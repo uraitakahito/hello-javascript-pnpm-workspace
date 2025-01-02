@@ -27,6 +27,12 @@ importers:
         specifier: ^1.1.1
         version: 1.1.1
 
+  packages/using-external-commonjs:
+    dependencies:
+      '@uraitakahito/hello-commonjs':
+        specifier: ^1.0.8
+        version: 1.0.8
+
   packages/using-external-esmodule:
     dependencies:
       '@uraitakahito/hello-esmodule':
@@ -86,6 +92,9 @@ packages:
 
   '@ungap/structured-clone@1.2.1':
     resolution: {integrity: sha512-fEzPV3hSkSMltkw152tJKNARhOupqbH96MZWyRjNaYZOMIzbrTeQDG+MTc6Mr2pgzFQzFxAfmhGDNP5QK++2ZA==}
+
+  '@uraitakahito/hello-commonjs@1.0.8':
+    resolution: {integrity: sha512-RUKEwps2GvyToer6mHnMTTA+jPT/uqNY0JE2DdBMet+WycN+GM5tDm+PbMNYGZAGwb5fHAfO2pueodPH+787OA==}
 
   '@uraitakahito/hello-esmodule@1.0.2':
     resolution: {integrity: sha512-rBvC8rFBMIIUzVNnGLTD7tW3+1xyPCwVPIoiVlkrGt9ueTC01GLJR/TIc+Ihz5L+zIwRhFfBna31vsDnJHZyyQ==}
@@ -1032,6 +1041,8 @@ snapshots:
   '@types/json5@0.0.29': {}
 
   '@ungap/structured-clone@1.2.1': {}
+
+  '@uraitakahito/hello-commonjs@1.0.8': {}
 
   '@uraitakahito/hello-esmodule@1.0.2': {}
 
