@@ -41,7 +41,11 @@ importers:
         specifier: ^1.0.2
         version: 1.0.2
 
-  packages/using-internal-esmodule: {}
+  packages/using-internal-esmodule:
+    dependencies:
+      exported-internal-esmodule:
+        specifier: workspace:*
+        version: link:../exported-internal-esmodule
 
 packages:
 
