@@ -15,23 +15,25 @@ importers:
         specifier: ^19.0.4
         version: 19.0.4(eslint-plugin-import@2.31.0(eslint@8.57.1))(eslint-plugin-jsx-a11y@6.10.2(eslint@8.57.1))(eslint-plugin-react-hooks@4.6.2(eslint@8.57.1))(eslint-plugin-react@7.37.2(eslint@8.57.1))(eslint@8.57.1)
 
-  packages/module-a:
-    dependencies:
-      module-b:
-        specifier: workspace:*
-        version: link:../module-b
+  packages/exported-internal-esmodule: {}
 
-  packages/module-b:
+  packages/using-external-commonjs:
     dependencies:
-      '@uraitakahito/hello-npmjs':
-        specifier: ^1.1.1
-        version: 1.1.1
+      '@uraitakahito/hello-commonjs':
+        specifier: ^1.0.8
+        version: 1.0.8
 
   packages/using-external-esmodule:
     dependencies:
       '@uraitakahito/hello-esmodule':
         specifier: ^1.0.2
         version: 1.0.2
+
+  packages/using-internal-esmodule:
+    dependencies:
+      exported-internal-esmodule:
+        specifier: workspace:*
+        version: link:../exported-internal-esmodule
 
 packages:
 
@@ -87,11 +89,11 @@ packages:
   '@ungap/structured-clone@1.2.1':
     resolution: {integrity: sha512-fEzPV3hSkSMltkw152tJKNARhOupqbH96MZWyRjNaYZOMIzbrTeQDG+MTc6Mr2pgzFQzFxAfmhGDNP5QK++2ZA==}
 
+  '@uraitakahito/hello-commonjs@1.0.8':
+    resolution: {integrity: sha512-RUKEwps2GvyToer6mHnMTTA+jPT/uqNY0JE2DdBMet+WycN+GM5tDm+PbMNYGZAGwb5fHAfO2pueodPH+787OA==}
+
   '@uraitakahito/hello-esmodule@1.0.2':
     resolution: {integrity: sha512-rBvC8rFBMIIUzVNnGLTD7tW3+1xyPCwVPIoiVlkrGt9ueTC01GLJR/TIc+Ihz5L+zIwRhFfBna31vsDnJHZyyQ==}
-
-  '@uraitakahito/hello-npmjs@1.1.1':
-    resolution: {integrity: sha512-O3+auRsZ8n7hEn66U6PZeD2clnkog0tXMaMG0vaFchIs41pDJaqxnfjmvwAahuQVFOsi20jnxW8NgEHkTgjQ1g==}
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -1033,9 +1035,9 @@ snapshots:
 
   '@ungap/structured-clone@1.2.1': {}
 
-  '@uraitakahito/hello-esmodule@1.0.2': {}
+  '@uraitakahito/hello-commonjs@1.0.8': {}
 
-  '@uraitakahito/hello-npmjs@1.1.1': {}
+  '@uraitakahito/hello-esmodule@1.0.2': {}
 
   acorn-jsx@5.3.2(acorn@8.14.0):
     dependencies:
