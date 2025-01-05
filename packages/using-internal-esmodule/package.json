@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "exported-internal-esmodule": "workspace:*"
+    "exported-internal-esmodule": "workspace:*",
+    "named-exports-no-default": "workspace:*"
   }
 }

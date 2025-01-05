@@ -36,6 +36,9 @@ importers:
       exported-internal-esmodule:
         specifier: workspace:*
         version: link:../exported-internal-esmodule
+      named-exports-no-default:
+        specifier: workspace:*
+        version: link:../named-exports-no-default
 
 packages:
 
