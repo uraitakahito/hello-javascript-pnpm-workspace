@@ -1,5 +1,3 @@
-import say from 'exported-internal-esmodule';
-
 //
 // Named import without `default export`:
 //
@@ -12,5 +10,3 @@ import * as namespaceObject1 from 'named-exports-no-default';
 // Named import without `default export`:
 console.log(named1);
 console.log(namespaceObject1.named1, namespaceObject1.named2);
-
-console.log(say());
