@@ -17,6 +17,8 @@ importers:
 
   packages/exported-internal-esmodule: {}
 
+  packages/named-exports-no-default: {}
+
   packages/using-external-commonjs:
     dependencies:
       '@uraitakahito/hello-commonjs':
