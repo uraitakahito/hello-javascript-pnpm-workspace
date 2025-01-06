@@ -15,7 +15,7 @@ importers:
         specifier: ^19.0.4
         version: 19.0.4(eslint-plugin-import@2.31.0(eslint@8.57.1))(eslint-plugin-jsx-a11y@6.10.2(eslint@8.57.1))(eslint-plugin-react-hooks@4.6.2(eslint@8.57.1))(eslint-plugin-react@7.37.2(eslint@8.57.1))(eslint@8.57.1)
 
-  packages/exported-internal-esmodule: {}
+  packages/named-exports-no-default: {}
 
   packages/using-external-commonjs:
     dependencies:
@@ -31,9 +31,9 @@ importers:
 
   packages/using-internal-esmodule:
     dependencies:
-      exported-internal-esmodule:
+      named-exports-no-default:
         specifier: workspace:*
-        version: link:../exported-internal-esmodule
+        version: link:../named-exports-no-default
 
 packages:
 
