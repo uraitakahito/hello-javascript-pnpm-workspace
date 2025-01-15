@@ -15,7 +15,33 @@ importers:
         specifier: ^19.0.4
         version: 19.0.4(eslint-plugin-import@2.31.0(eslint@8.57.1))(eslint-plugin-jsx-a11y@6.10.2(eslint@8.57.1))(eslint-plugin-react-hooks@4.6.2(eslint@8.57.1))(eslint-plugin-react@7.37.2(eslint@8.57.1))(eslint@8.57.1)
 
+  packages/import-external-esmodule:
+    dependencies:
+      '@uraitakahito/hello-esmodule':
+        specifier: ^1.0.2
+        version: 1.0.2
+
+  packages/import-internal-esmodule:
+    dependencies:
+      named-exports-no-default:
+        specifier: workspace:*
+        version: link:../named-exports-no-default
+      named-exports-with-default:
+        specifier: workspace:*
+        version: link:../named-exports-with-default
+
+  packages/local-import-checker:
+    dependencies:
+      '@uraitakahito/hello-commonjs':
+        specifier: ^1.0.8
+        version: 1.0.8
+      '@uraitakahito/hello-esmodule':
+        specifier: ^1.0.2
+        version: 1.0.2
+
   packages/named-exports-no-default: {}
+
+  packages/named-exports-with-default: {}
 
   packages/using-external-commonjs:
     dependencies:
@@ -28,12 +54,6 @@ importers:
       '@uraitakahito/hello-esmodule':
         specifier: ^1.0.2
         version: 1.0.2
-
-  packages/using-internal-esmodule:
-    dependencies:
-      named-exports-no-default:
-        specifier: workspace:*
-        version: link:../named-exports-no-default
 
 packages:
 
